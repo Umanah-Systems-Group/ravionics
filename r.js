@@ -206,6 +206,23 @@ function modes() {
   });
 }
 
+/* ---------- contact form (Formspree), stays on the page if sending fails ---------- */
+function contact() {
+  const form = $("#contactForm");
+  if (!form) return;
+  const btn = $("button[type=submit]", form), status = $("[data-form-status]", form), label = btn.innerHTML;
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    btn.disabled = true; btn.textContent = "Sending..."; status.textContent = "";
+    try {
+      const res = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+      if (res.ok) { location.href = "/thanks.html"; return; }
+      status.textContent = "Something went wrong. Please try again.";
+    } catch { status.textContent = "Network error. Please check your connection and try again."; }
+    btn.disabled = false; btn.innerHTML = label;
+  });
+}
+
 header();
 reveals();
 films();
@@ -215,3 +232,4 @@ inside();
 tryit();
 relay();
 modes();
+contact();
