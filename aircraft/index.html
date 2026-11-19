@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ravionics | A full day on watch</title>
+<meta name="description" content="Ravionics is an uncrewed hybrid tilt-wing aircraft. It takes off like a helicopter from a deck or a pad, flies on its wing, and is designed to stay on station for 24 hours.">
+<meta name="theme-color" content="#04060a">
+<link rel="icon" href="/aircraft/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/hanken-grotesk-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/aircraft/r.css?v=89de6972b4">
+<script type="module" src="/aircraft/r.js?v=25fdd10a5b"></script>
+<meta property="og:title" content="Ravionics: a full day on watch">
+<meta property="og:description" content="An uncrewed hybrid tilt-wing designed to stay on station for 24 hours. Takes off from a deck, flies on its wing.">
+<meta property="og:image" content="https://ravionics.com/assets/video/ravionics-film-poster.webp">
+<link rel="canonical" href="https://ravionics.com/aircraft/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap bar">
+<a class="mark" href="#top" aria-label="Ravionics, back to the top"><svg viewBox="0 0 34 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2 10h30"/><path d="M17 3v14"/><circle cx="4" cy="10" r="2.4"/><circle cx="30" cy="10" r="2.4"/><path d="M12 15.5h10"/></svg><span>RAVIONICS</span></a>
+<nav id="nav" aria-label="Sections"><a href="#aircraft">Aircraft</a><a href="#flight">Flight</a><a href="#inside">Inside</a><a href="#assembly">Assembly</a><a href="#mission">Mission</a><a href="#control">Control</a><a href="#software">Software</a></nav>
+<a class="btn solid sm" href="#film">Watch it fly <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+<button class="burger" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+</div></header>
+<main id="main">
+
+<section class="hero" id="top" aria-labelledby="hero-h">
+  <div class="stage"><div class="v3d herov" data-v3d="{&quot;model&quot;:&quot;ravionics&quot;,&quot;mode&quot;:&quot;drive&quot;,&quot;yaw&quot;:0.95,&quot;pitch&quot;:0.22,&quot;tilt&quot;:90,&quot;fold&quot;:0,&quot;zoom&quot;:1}" role="img" aria-label="Ravionics drawn as a gold x-ray: it lifts off with ten propellers, tilts its wing forward and cruises on two"><img class="poster" src="/assets/poster/ravionics.webp" alt="" decoding="async"></div></div>
+  <div class="wrap copy">
+    <div>
+      <p class="eyebrow fade">Uncrewed hybrid tilt-wing</p>
+      <h1 id="hero-h" class="mt-m"><span class="l"><span>A full day</span></span><span class="l"><span>on watch.</span></span></h1>
+      <p class="lead fade mt-m">Ravionics lifts off a ship's deck or a small pad like a helicopter, then tilts its wing and flies like an airplane. It is designed to stay on station for 24 hours, with no runway and a small crew.</p>
+      <div class="acts fade mt-m"><a class="btn solid" href="#film">Watch it fly <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a class="btn ghost" href="#aircraft">The aircraft</a></div>
+    </div>
+    <aside class="hud fade" aria-label="Live readout of the 3D aircraft above">
+      <div class="row"><span class="k">Phase</span><span class="v" data-hud="phase">Vertical takeoff</span></div>
+      <div class="row"><span class="k">Wing tilt</span><span class="v" data-hud="tilt">90°</span></div>
+      <div class="gauge"><i data-hud="tiltbar" style="--g:1"></i></div>
+      <div class="row"><span class="k">Propellers</span><span class="pips" data-hud="pips"><i class="on" data-tip="1"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on" data-tip="1"></i><i class="on"></i><i class="on"></i></span></div>
+      <div class="row"><span class="k">Power, est.</span><span class="v" data-hud="power">about 20 kW</span></div>
+      <p class="tag">Planning estimates for the reference design, from the simulator.</p>
+    </aside>
+  </div>
+  <span class="scrollcue" aria-hidden="true"></span>
+</section>
+
+<section id="aircraft" class="sec" aria-labelledby="ac-h"><div class="wrap">
+  <div class="head" data-in><div><p class="eyebrow">The aircraft</p><h2 id="ac-h" class="mt-m">Small enough to carry.<br><span class="dim">Built to stay up.</span></h2></div>
+  <p class="lead">Ten electric propellers for the hover, a long wing for the cruise and a diesel hybrid at its heart. One aircraft, three ways of flying, and nothing that needs a runway.</p></div>
+  <div class="specs mt-xl" data-in>
+    <div><div class="n">20<small>ft</small></div><div class="c">Wingspan</div></div>
+    <div><div class="n">275<small>lb</small></div><div class="c">Takeoff weight target</div></div>
+    <div><div class="n">10</div><div class="c">Propellers: 8 on the wing, 2 on the tail</div></div>
+    <div><div class="n">2</div><div class="c">Turning in cruise: the wingtips</div></div>
+    <div><div class="n">24<small>h</small></div><div class="c">Loiter target, on station</div></div>
+    <div><div class="n">&lt;30<small>min</small></div><div class="c">Field assembly target, two people</div></div>
+  </div>
+  <p class="note mt-m">Design goals and planning estimates for the reference aircraft, not measurements. Ravionics flies in simulation today.</p>
+</div></section>
+
+<section id="film" aria-label="Film: Ravionics from hover to cruise"><div class="cinema" data-in>
+  <figure class="film "><video class="loop" muted loop playsinline preload="none" poster="/assets/video/ravionics-film-poster.webp?v=1ir4" aria-label="Concept animation: Ravionics hovers on ten propellers, tilts its wing and tail forward, folds eight propellers flat and cruises on the two at the wingtips"><source src="/assets/video/ravionics-film.webm?v=1gi56" type="video/webm"><source src="/assets/video/ravionics-film.mp4?v=19yfr" type="video/mp4"></video><figcaption>Hover, transition, cruise. Concept animation from the design model.</figcaption></figure>
+</div></section>
+
+<section class="flight" id="flight" aria-labelledby="fl-h"><div class="stick">
+  <div class="v3d " data-v3d="{&quot;model&quot;:&quot;ravionics&quot;,&quot;mode&quot;:&quot;drive&quot;,&quot;yaw&quot;:1.1,&quot;pitch&quot;:0.3,&quot;tilt&quot;:90,&quot;fold&quot;:0,&quot;zoom&quot;:1,&quot;lit&quot;:[]}" role="img" aria-label="Ravionics in 3D, flying the four phases of a sortie as you scroll"><img class="poster" src="/assets/poster/cycle.webp" alt="" decoding="async" loading="lazy"></div>
+  <div class="steps">
+    <p class="eyebrow label" id="fl-h">One sortie, in four phases</p>
+    <div class="meter" aria-hidden="true"><span>Tilt <b data-fl="tilt">90°</b></span><span>Turning <b data-fl="props">10 of 10</b></span><span>Power <b data-fl="power">about 20 kW</b></span></div>
+    <div class="step on" data-step="0"><span class="i">01</span><h3>Lift off a deck</h3><p>Wing and tail point straight up. All ten propellers lift the aircraft off a pad or a moving deck, the battery helping the diesel through the peak.</p></div>
+    <div class="step" data-step="1"><span class="i">02</span><h3>Tilt into the wind</h3><p>Wing and tail tilt forward together as speed builds, until the wing takes the weight. The flight software holds it steady the whole way.</p></div>
+    <div class="step" data-step="2"><span class="i">03</span><h3>Fold and cruise</h3><p>Eight propellers fold flat against their pods. The two at the wingtips pull the aircraft along, and the diesel recharges the battery.</p></div>
+    <div class="step" data-step="3"><span class="i">04</span><h3>Loiter all day</h3><p>On station it needs only a few kilowatts, a fraction of the hover power. That is what makes a full day in the air possible.</p></div>
+    <div class="bar" aria-hidden="true"><i></i></div>
+  </div>
+</div></section>
+
+<section id="inside" class="sec" aria-labelledby="in-h"><div class="wrap">
+  <div class="head" data-in><div><p class="eyebrow">Inside</p><h2 id="in-h" class="mt-m">A hybrid heart.</h2></div>
+  <p class="lead">Batteries alone cannot fly for a day, and engines alone cannot hover efficiently. Ravionics carries both, and the software decides which one works when. Pick a system to light it up.</p></div>
+  <div class="inside mt-xl" data-in>
+    <div class="v3d insidev" data-v3d="{&quot;model&quot;:&quot;ravionics&quot;,&quot;mode&quot;:&quot;orbit&quot;,&quot;yaw&quot;:1.05,&quot;pitch&quot;:0.3,&quot;tilt&quot;:0,&quot;fold&quot;:1,&quot;zoom&quot;:1.55,&quot;lit&quot;:&quot;all&quot;}" role="img" aria-label="Ravionics in x-ray, with the chosen system lit in green"><img class="poster" src="/assets/poster/ravionics-inside.webp" alt="" decoding="async" loading="lazy"></div>
+    <div class="syslist" role="group" aria-label="Systems">
+      <button type="button" data-sys="power" aria-pressed="false"><span class="d">01</span><span class="t">Hybrid power</span><span class="s">Two heavy-fuel diesels turn alternators. They run the aircraft in cruise and recharge the battery.</span></button>
+      <button type="button" data-sys="batt" aria-pressed="false"><span class="d">02</span><span class="t">Battery</span><span class="s">Covers the short, hungry minutes of vertical takeoff, landing and transition.</span></button>
+      <button type="button" data-sys="fuel" aria-pressed="false"><span class="d">03</span><span class="t">Fuel</span><span class="s">Diesel or jet fuel, the same as the ship or the base it flies from, sized for a long day.</span></button>
+      <button type="button" data-sys="fc" aria-pressed="false"><span class="d">04</span><span class="t">Flight computer</span><span class="s">Runs the autopilot, the safety checks and the radio link, with a backup.</span></button>
+      <button type="button" data-sys="payload" aria-pressed="false"><span class="d">05</span><span class="t">Sensor ball</span><span class="s">A swappable payload pod: day and thermal cameras looking down and out to sea.</span></button>
+      <button type="button" data-sys="harness" aria-pressed="false"><span class="d">06</span><span class="t">Power and data wiring</span><span class="s">One spine of power and data, with blind-mate plugs at every module joint.</span></button>
+    </div>
+  </div>
+  <div class="mt-l" data-in><figure class="film "><video class="loop" muted loop playsinline preload="none" poster="/assets/video/power-closeup-poster.webp?v=1u4a" aria-label="Close-up film of the hybrid core in x-ray: diesels, alternators, battery and blue wiring pulses, as the propellers fold for cruise"><source src="/assets/video/power-closeup.webm?v=2c33c" type="video/webm"><source src="/assets/video/power-closeup.mp4?v=1yu7o" type="video/mp4"></video><figcaption>The hybrid core, close up. Concept animation from the design model.</figcaption></figure></div>
+</div></section>
+
+<section id="assembly" class="sec" style="background:var(--bg2)" aria-labelledby="as-h"><div class="wrap">
+  <div class="head" data-in><div><p class="eyebrow">From the box to the station</p><h2 id="as-h" class="mt-m">Two people.<br><span class="dim">No tools.</span></h2></div>
+  <p class="lead">Ravionics travels in cases and comes apart into five modules, each light enough for two people to carry. Pins lock them, plugs mate blind, and every module tells the software who it is.</p></div>
+  <div class="assembly mt-xl">
+    <div data-in><figure class="film "><video class="loop" muted loop playsinline preload="none" poster="/assets/video/box-station-poster.webp?v=1c8o" aria-label="Film: the cases open, the wing and tail join the fuselage, a tablet runs the preflight until it is all green, then the aircraft lifts off, tilts its wing and flies out to its station"><source src="/assets/video/box-station.webm?v=2j5v3" type="video/webm"><source src="/assets/video/box-station.mp4?v=2nvq3" type="video/mp4"></video><figcaption>From the cases to the station in 24 seconds. Simulated, drawn from the design model.</figcaption></figure></div>
+    <div data-in>
+      <div class="clock"><span class="n">&lt;30</span><span class="u">minutes, cases to takeoff (target)</span></div>
+      <ol class="timeline">
+        <li><b>Open the cases</b><span>Body, two wings, tail and payload pod.</span></li>
+        <li><b>Click the modules together</b><span>Tool-free pins and blind-mate power and data plugs.</span></li>
+        <li><b>Let the software check</b><span>Each module's ID, calibration and hours are read and verified. A copied or changed module is refused.</span></li>
+        <li><b>Preflight goes green, lift off</b><span>Motors, power, fence and link all checked before the first propeller turns.</span></li>
+      </ol>
+    </div>
+  </div>
+</div></section>
+
+<section id="transition" class="sec" aria-labelledby="tr-h"><div class="wrap">
+  <div class="head" data-in><div><p class="eyebrow">Try it</p><h2 id="tr-h" class="mt-m">Tilt the wing yourself.</h2></div>
+  <p class="lead">The hardest moment for a tilt-wing is the change from hover to flight. Drag the wing and watch what the aircraft does with its propellers and its power.</p></div>
+  <div class="tryit mt-xl" data-in>
+    <div class="v3d tryv" data-v3d="{&quot;model&quot;:&quot;ravionics&quot;,&quot;mode&quot;:&quot;drive&quot;,&quot;yaw&quot;:0.85,&quot;pitch&quot;:0.26,&quot;tilt&quot;:90,&quot;fold&quot;:0,&quot;zoom&quot;:1.05,&quot;lit&quot;:[&quot;power&quot;,&quot;batt&quot;,&quot;harness&quot;]}" role="img" aria-label="Ravionics in 3D, its wing set by the slider beside it"><img class="poster" src="/assets/poster/live.webp" alt="" decoding="async" loading="lazy"></div>
+    <div class="ctl">
+      <div><label for="tilt">Wing and tail tilt</label><div class="deg mt-s" data-live="deg" aria-live="polite">90°</div></div>
+      <div><input id="tilt" type="range" min="0" max="90" step="1" value="90" aria-describedby="tilt-ends"><div class="ends" id="tilt-ends"><span>0°, cruise</span><span>90°, hover</span></div></div>
+      <dl>
+        <dt>Flying</dt><dd data-live="mode">Hover</dd>
+        <dt>Propellers turning</dt><dd data-live="props">10 of 10</dd>
+        <dt>Power draw, est.</dt><dd data-live="power">about 20 kW</dd>
+        <dt>Power from</dt><dd data-live="source">battery helps the diesel</dd>
+      </dl>
+      <p class="note">Planning estimates for the reference aircraft, from the simulator.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="mission" class="sec" style="background:var(--bg2)" aria-labelledby="mi-h"><div class="wrap">
+  <div class="head" data-in><div><p class="eyebrow">The mission</p><h2 id="mi-h" class="mt-m">Always one<br>on station.</h2></div>
+  <p class="lead">Maritime domain awareness: watch a harbor, a coastline, a shipping lane or a search area around the clock. A relief aircraft arrives before the one on station turns for home, so the picture never goes dark.</p></div>
+  <div class="relay mt-xl" data-in aria-label="A day of relief: three aircraft overlap so one is always on station">
+    <p class="note">One day, three aircraft, planned from real fuel (simulated)</p>
+    <div class="lanes" data-relay>
+      <div class="lane"><span class="nm">RAV-01</span><i class="s tr" style="left:0%;width:4%"></i><i class="s" style="left:4%;width:46%"></i><i class="s tr" style="left:50%;width:4%"></i></div>
+      <div class="lane"><span class="nm">RAV-02</span><i class="s tr" style="left:42%;width:4%"></i><i class="s" style="left:46%;width:46%"></i><i class="s tr" style="left:92%;width:4%"></i></div>
+      <div class="lane"><span class="nm">RAV-03</span><i class="s" style="left:0%;width:6%"></i><i class="s tr" style="left:6%;width:4%"></i><i class="s tr" style="left:84%;width:4%"></i><i class="s" style="left:88%;width:12%"></i></div>
+      <span class="now" aria-hidden="true"></span>
+    </div>
+    <div class="cov" aria-hidden="true"><i></i></div>
+    <div class="hours" aria-hidden="true"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div>
+    <div class="key"><span><i style="background:rgba(242,185,80,.5)"></i>On station</span><span><i style="background:rgba(169,196,224,.3)"></i>Transit out or home</span><span><i style="background:var(--sys)"></i>Coverage: unbroken</span></div>
+  </div>
+  <div class="cards mt-l">
+    <div class="card" data-in><div class="big">3 to 4</div><p>People per shift is the crew goal. The aircraft flies itself; people supervise, decide and keep the record.</p></div>
+    <div class="card" data-in><div class="big">Deck</div><p>Takes off and lands vertically on a ship's deck or a small pad ashore. No runway, no catapult, no net.</p></div>
+    <div class="card" data-in><div class="big">Fleet</div><p>Planned to scale from one aircraft to hundreds, each one scheduled, relieved and maintained by the same software.</p></div>
+  </div>
+  <div class="band mt-l">
+    <div data-in><figure class="film "><video class="loop" muted loop playsinline preload="none" poster="/assets/video/layer-fleet-poster.webp?v=bs4" aria-label="Film: three Ravionics aircraft circle the same station, linked to a ground station, so one is always overhead"><source src="/assets/video/layer-fleet.webm?v=envv" type="video/webm"><source src="/assets/video/layer-fleet.mp4?v=bo76" type="video/mp4"></video><figcaption>Three aircraft share one station. Simulated.</figcaption></figure></div>
+    <div data-in><figure class="film "><video class="loop" muted loop playsinline preload="none" poster="/assets/video/layer-sensing-poster.webp?v=wim" aria-label="Film: the sensor ball looks down through haze; a thermal picture is cleared and features are tracked"><source src="/assets/video/layer-sensing.webm?v=ifdr" type="video/webm"><source src="/assets/video/layer-sensing.mp4?v=ha3s" type="video/mp4"></video><figcaption>Seeing through haze: thermal picture, cleared and tracked. Simulated.</figcaption></figure></div>
+  </div>
+</div></section>
+
+<section id="control" class="sec" aria-labelledby="co-h"><div class="wrap">
+  <div class="control">
+    <div data-in>
+      <p class="eyebrow">Control</p><h2 id="co-h" class="mt-m">Autonomous by default.<br><span class="dim">Yours when you want it.</span></h2>
+      <div class="modes mt-l" role="tablist" aria-label="Control levels">
+        <button role="tab" id="m-auto" aria-selected="true" aria-controls="p-auto">Autonomous</button>
+        <button role="tab" id="m-guided" aria-selected="false" aria-controls="p-guided" tabindex="-1">Guided</button>
+        <button role="tab" id="m-manual" aria-selected="false" aria-controls="p-manual" tabindex="-1">Manual</button>
+      </div>
+      <div class="modepanel" role="tabpanel" id="p-auto" aria-labelledby="m-auto"><h3>It flies the plan.</h3><p>Takeoff, transition, the route, the orbit and the landing are flown by the aircraft. The crew watches, approves and steps in only when they choose to.</p></div>
+      <div class="modepanel" role="tabpanel" id="p-guided" aria-labelledby="m-guided" hidden><h3>Point, and it goes.</h3><p>Tap a new orbit, a new heading or a new height. The aircraft works out how to get there safely and tells you before it does.</p></div>
+      <div class="modepanel" role="tabpanel" id="p-manual" aria-labelledby="m-manual" hidden><h3>Hands on the sticks.</h3><p>A pilot can always take direct control. If the link drops, the aircraft does not wait: it takes back over, holds safe and heads for its planned recovery.</p></div>
+      <ul class="ticks">
+        <li><span><b>A fence it will not cross.</b> The approved area is loaded before takeoff and checked many times a second.</span></li>
+        <li><span><b>A safe place to land.</b> If something fails, it chooses the clearest spot within reach.</span></li>
+        <li><span><b>A motor out is not the end.</b> Ten propellers share the load, and the rest make up for one that stops.</span></li>
+      </ul>
+    </div>
+    <div data-in><figure class="film "><video class="loop" muted loop playsinline preload="none" poster="/assets/video/layer-safety-poster.webp?v=bis" aria-label="Film: Ravionics reaches the red boundary of its approved area and turns back, then picks the green landing spot from several"><source src="/assets/video/layer-safety.webm?v=imcb" type="video/webm"><source src="/assets/video/layer-safety.mp4?v=j3el" type="video/mp4"></video><figcaption>Reaching the fence and turning back, then choosing where to land. Simulated.</figcaption></figure></div>
+  </div>
+</div></section>
+
+<section id="software" class="sec" style="padding-top:0" aria-labelledby="sw-h"><div class="wrap">
+  <div class="soft" data-in>
+    <div class="txt">
+      <p class="eyebrow">Flown by Galleion</p>
+      <h2 id="sw-h" style="font-size:clamp(34px,4vw,58px)">The software is the aircraft's other half.</h2>
+      <p class="lead" style="font-size:18px">Galleion is where Ravionics is designed, simulated, flown and kept. Flight software for the hover-to-wing transition, the fence and beyond-sight operations; ground control; relief planning; maintenance for every module; and a signed record of every sortie.</p>
+      <div class="pills"><span>Design</span><span>Digital twin</span><span>Live weather</span><span>Ground control</span><span>Relief planning</span><span>Module hours</span><span>Signed records</span></div>
+      <div class="acts" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn solid" href="https://galleion.umanahsystems.com/">Explore Galleion <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a class="btn ghost" href="https://galleion.umanahsystems.com/login/">Sign in</a></div>
+    </div>
+    <figure class="film "><video class="loop" muted loop playsinline preload="none" poster="/assets/video/layer-positioning-poster.webp?v=ur4" aria-label="Film: Ravionics hovers over a landing pad and fixes its position from satellites and ground markers before touching down"><source src="/assets/video/layer-positioning.webm?v=ki7s" type="video/webm"><source src="/assets/video/layer-positioning.mp4?v=jcnn" type="video/mp4"></video></figure>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0" aria-labelledby="st-h"><div class="wrap">
+  <h2 id="st-h" data-in style="font-size:clamp(30px,3.4vw,48px)">Where it stands.</h2>
+  <div class="standing mt-l" data-in>
+    <div><p class="k">Assessed awardable</p><p><b>Tradewinds Solutions Marketplace</b> and <b>DARPA ERIS</b> assessed the Ravionics proposals as awardable.</p></div>
+    <div><p class="k">In simulation</p><p>The design, the flight software and the ground control all run in simulation today. <b>No flight has been made yet.</b></p></div>
+    <div><p class="k">Next</p><p>Bench tests of the hybrid power and the motors, then hardware in the loop, then flight trials.</p></div>
+  </div>
+</div></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div><a class="mark" href="#top"><svg viewBox="0 0 34 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2 10h30"/><path d="M17 3v14"/><circle cx="4" cy="10" r="2.4"/><circle cx="30" cy="10" r="2.4"/><path d="M12 15.5h10"/></svg><span>RAVIONICS</span></a><p class="note mt-m" style="max-width:30em">An uncrewed hybrid tilt-wing for a full day on watch. A Umanah Systems Group aircraft program, designed and flown with Galleion.</p></div>
+    <div><h4>Aircraft</h4><ul><li><a href="#aircraft">Aircraft</a></li><li><a href="#flight">Flight</a></li><li><a href="#inside">Inside</a></li><li><a href="#assembly">Assembly</a></li><li><a href="#mission">Mission</a></li></ul></div>
+    <div><h4>Galleion</h4><ul><li><a href="https://galleion.umanahsystems.com/">Galleion home</a></li><li><a href="https://galleion.umanahsystems.com/platform/">The platform</a></li><li><a href="https://galleion.umanahsystems.com/trust/">Trust</a></li><li><a href="https://galleion.umanahsystems.com/credits/">Credits</a></li><li><a href="https://galleion.umanahsystems.com/login/">Sign in</a></li><li><a href="https://umanahsystems.com/privacy.html">Privacy</a></li></ul></div>
+  </div>
+  <p class="word" aria-hidden="true">RAVIONICS</p>
+  <div class="legal"><span>© 2026 Umanah Systems Group</span><span>Concept animations and 3D scenes are drawn from the design model. Figures are design goals or simulated results, not measurements.</span></div>
+</div></footer>
+</body>
+</html>
