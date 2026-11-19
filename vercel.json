@@ -1,16 +1,25 @@
 {
+  "redirects": [
+    { "source": "/aircraft", "destination": "/", "permanent": true },
+    { "source": "/aircraft/", "destination": "/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/og-image.png",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "image/png"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400, s-maxage=86400"
-        }
+        { "key": "Content-Type", "value": "image/png" },
+        { "key": "Cache-Control", "value": "public, max-age=86400, s-maxage=86400" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
   ]
