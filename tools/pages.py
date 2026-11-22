@@ -494,7 +494,7 @@ def about():
         ("Resources", 'The <a href="/ravionics-infographic.html">Gap Map</a> and the <a href="/ravionics-cost-model.html">Coverage Model</a>.', "")])
     out += duo([("https://galleion.umanahsystems.com/", f"{F}/sys-brain.jpg", "FREGATA seen through its skin, the flight computer lit in gold", "Galleion", "The software is its other half", "Design, simulation, flight software, ground control, relief planning and module records, in one place.", "Explore Galleion"),
                 ("/contact.html", f"{S}/hover_34.webp", "FREGATA ready to lift", "Contact", "Request a briefing", "For agencies with a watch to keep, operators of coasts, ports and pipelines, and investors.", "Contact")])
-    out += close("Always watching. Never armed.")
+    out += close("Keep a watch with us.")
     return out + FOOT
 
 

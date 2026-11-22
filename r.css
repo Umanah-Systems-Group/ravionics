@@ -857,9 +857,9 @@ html { scroll-padding-top: 64px; }
 .k-close-pic .k-close-h { text-shadow: 0 2px 30px rgba(0,0,0,.6); }
 
 /* film chapters: readable over bright water */
-.film-chapters li { color: rgba(243,154,46,.8); text-shadow: 0 1px 3px rgba(0,0,0,.9), 0 0 18px rgba(0,0,0,.55); font-weight: 600; }
+.film-chapters li { color: rgba(217,164,65,.8); text-shadow: 0 1px 3px rgba(0,0,0,.9), 0 0 18px rgba(0,0,0,.55); font-weight: 600; }
 .film-chapters li.on { color: #fff; }
-.film-chapters li.on::after { background: #f39a2e; }
+.film-chapters li.on::after { background: #d9a441; }
 
 /* how it is done today: real photographs */
 .k-today { display: block !important; min-height: 0; padding: clamp(120px, 14vw, 200px) var(--m) clamp(90px, 10vw, 140px); }
@@ -867,14 +867,14 @@ html { scroll-padding-top: 64px; }
 .k-today::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, #05070a 0%, rgba(5,7,10,.45) 14%, rgba(5,7,10,.62) 50%, rgba(5,7,10,.82) 85%, #05070a 100%); pointer-events: none; }
 .k-today > * { position: relative; z-index: 1; }
 .k-today .k-q-copy { margin: 0 auto; }
-.k-today-kicker { font-size: .8rem !important; letter-spacing: .2em; text-transform: uppercase; color: #f39a2e !important; margin-bottom: 18px !important; }
+.k-today-kicker { font-size: .8rem !important; letter-spacing: .2em; text-transform: uppercase; color: #d9a441 !important; margin-bottom: 18px !important; }
 .k-today-strip { width: 100%; list-style: none; margin: clamp(48px, 6vw, 80px) auto 0; padding: 0; max-width: var(--max); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; text-align: left; }
 .k-today-strip li { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: #000; }
 .k-today-strip img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease-out); }
 .k-today-strip li:hover img { transform: scale(1.05); }
 .k-today-strip li::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,7,10,0) 45%, rgba(5,7,10,.92) 100%); }
 .k-today-strip b, .k-today-strip span { position: absolute; z-index: 1; left: 20px; right: 20px; }
-.k-today-strip b { bottom: 62px; font-size: .78rem; letter-spacing: .18em; color: #f39a2e; font-weight: 600; }
+.k-today-strip b { bottom: 62px; font-size: .78rem; letter-spacing: .18em; color: #d9a441; font-weight: 600; }
 .k-today-strip span { bottom: 18px; font-size: 1.05rem; line-height: 1.3; color: #fff; }
 .k-today-end { margin-top: clamp(56px, 7vw, 96px) !important; }
 .k-today-big { font-size: clamp(2rem, 1.2rem + 3vw, 4rem) !important; font-weight: 540; letter-spacing: -0.03em; line-height: 1.05; color: #fff !important; max-width: none !important; margin: 0 0 28px !important; }
@@ -974,3 +974,16 @@ html { scroll-padding-top: 64px; }
   .duo-copy { text-align: center; }
   .duo-copy p { margin: 0 auto; }
 @media (max-width: 760px) { .duo { grid-template-columns: minmax(0, 1fr); } .duo a { min-height: 70svh; } .duo-copy { text-align: center; } .duo-copy p { margin: 0 auto; } }
+
+/* hero words sit below the aircraft, not across it */
+@media (orientation: landscape) and (min-width: 761px) { .k-hero-h { top: 66%; } }
+/* portrait tablets: show the whole aircraft in the films instead of a narrow middle crop */
+@media (orientation: portrait) and (min-width: 761px) {
+  .scrub-film, .scrub-still, .k-jobs-film, .showcase-film { object-fit: contain; object-position: 50% 42%; background: #000; }
+}
+@media (orientation: portrait) and (min-width: 761px) {
+  .capture .scrub-film, .capture .scrub-still { object-position: 50% 30%; }
+  .scrub-notes > p, .scrub-notes > div { left: 50%; top: auto; bottom: 7%; width: min(560px, 84vw); transform: translate(-50%, 12px); }
+  .scrub-notes > .on { transform: translate(-50%, 0); }
+  .k-jobs-film { object-position: 50% 30%; }
+}
