@@ -4,244 +4,146 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ravionics | FREGATA. Always Watching.</title>
-<meta name="description" content="FREGATA by Ravionics is an unarmed, uncrewed tilt-wing aircraft for surveillance. It lifts off a deck or a small pad, turns its wing to fly like an airplane, and is designed to stay on station for a full day.">
-<meta name="theme-color" content="#0f1012">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/assets/fonts/hanken-grotesk-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fregata/cruise_34.webp" as="image" type="image/webp">
-<link rel="stylesheet" href="/r.css?v=6b65c7f318">
-<script type="module" src="/r.js?v=63760496a5"></script>
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ravionics.com/">
-<meta property="og:site_name" content="Ravionics">
-<meta property="og:title" content="FREGATA by Ravionics. Always Watching.">
-<meta property="og:description" content="An unarmed, uncrewed tilt-wing designed to stay on station for a full day. Takes off from a deck, flies on its wing.">
+<meta name="description" content="FREGATA by Ravionics: an unarmed, uncrewed tilt-wing aircraft that lifts off a ship's deck like a helicopter, flies like an airplane and is designed to stay on watch for a full day.">
+<meta name="theme-color" content="#05070a">
+<meta property="og:title" content="Ravionics | FREGATA. Always Watching.">
+<meta property="og:description" content="FREGATA by Ravionics: an unarmed, uncrewed tilt-wing aircraft that lifts off a ship's deck like a helicopter, flies like an airplane and is designed to stay on watch for a full day.">
 <meta property="og:image" content="https://ravionics.com/og-fregata.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://ravionics.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/r.css?v=b4315dc12b">
+<script type="module" src="/r.js?v=55e0f66c54"></script>
 </head>
-<body>
+<body class="pg-index">
 <a class="skip" href="#main">Skip to content</a>
-
-<header class="top"><div class="wrap bar">
-  <a class="mark" href="#top" aria-label="Ravionics, back to the top"><b>R</b><span>RAVIONICS</span></a>
-  <nav id="nav" aria-label="Sections">
-    <a href="#top">Home</a><a href="#fregata">FREGATA</a><a href="#technology">Technology</a><a href="#missions">Missions</a><a href="#fieldkit">Field Kit</a><a href="#about">About</a><a href="#contact">Contact</a>
+<header class="bar" id="bar">
+  <a class="wordmark" href="/" aria-label="Ravionics, home"><svg class="mark" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><path d="M2 15.5 L13 13 L16 9 L19 13 L30 15.5 L19 17 L16 23 L13 17 Z" fill="currentColor"/></svg><span>Ravionics</span></a>
+  <nav class="links" id="links" aria-label="Main">
+    <a href="/" aria-current="page">Home</a>
+    <a href="/fregata.html">FREGATA</a>
+    <a href="/technology.html">Technology</a>
+    <a href="/missions.html">Missions</a>
+    <a href="/field-kit.html">Field Kit</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
   </nav>
-  <a class="btn solid sm cta" href="#contact">Request a briefing</a>
-  <button class="burger" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
-</div></header>
+  <p class="clock" aria-label="Clock"><span id="clock">UTC --:--:--</span> <span class="clock-sep">/</span> Home</p>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="links" aria-label="Open menu">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 8h18M3 16h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+  </button>
+</header>
 
 <main id="main">
-
-<span id="hero" class="anchor"></span>
-<section class="hero" id="top" aria-labelledby="hero-h">
-  <picture class="hero-img">
-    <source media="(max-width: 700px)" srcset="/assets/fregata/cruise_34-900.webp">
-    <img src="/assets/fregata/cruise_34.webp" alt="FREGATA in cruise: a graphite tilt-wing aircraft with thin gold light lines, wing flat, a camera ball under its nose" width="1440" height="810" fetchpriority="high">
-  </picture>
-  <div class="hero-shade" aria-hidden="true"></div>
-  <div class="wrap hero-in">
-    <p class="eyebrow fade">FREGATA by Ravionics</p>
-    <h1 id="hero-h" class="fade">Always<br>Watching.</h1>
-    <p class="lead fade">An unarmed, uncrewed tilt-wing aircraft. FREGATA lifts off a ship's deck or a small pad like a helicopter, turns its whole wing to fly like an airplane, and is designed to stay on station for a full day.</p>
-    <div class="acts fade"><a class="btn solid" href="#fregata">Meet FREGATA <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a><a class="btn ghost" href="#contact">Request a briefing</a></div>
-  </div>
-  <div class="wrap fade hero-foot"><div class="hero-strip" aria-label="Key figures, design goals">
-    <div><b>20 ft</b><span>Wingspan</span></div>
-    <div><b>10</b><span>Electric propellers</span></div>
-    <div><b>24 h</b><span>Loiter target, approximate</span></div>
-    <div><b>0 ft</b><span>Of runway needed</span></div>
-  </div></div>
-</section>
-
-<span id="platform" class="anchor"></span>
-<section id="fregata" class="sec" aria-labelledby="fr-h"><div class="wrap">
-  <div class="head" data-in>
-    <p class="eyebrow"><i>01</i> FREGATA</p>
-    <h2 id="fr-h">Named for the bird<br>that barely lands.</h2>
-    <p class="lead">The frigatebird stays aloft over open sea for days on a long, efficient wing. FREGATA is built on the same idea: lift off without a runway, then ride a long wing for hours while ten small electric propellers rest.</p>
-  </div>
-
-  <div class="viewer mt-l" data-in>
-    <div class="stage" data-viewer>
-      <figure class="on" data-view="hover_front"><img src="/assets/fregata/hover_front.webp" alt="FREGATA from the front, standing on three gold-rimmed pads, wing turned on edge with eight propellers pointing up and two more above the tail" width="1440" height="810" loading="lazy"></figure>
-      <figure data-view="hover_34"><img src="/assets/fregata/hover_34.webp" alt="FREGATA from the front quarter in hover pose, wing on edge, all ten propellers on top" width="1440" height="810" loading="lazy"></figure>
-      <figure data-view="transition_34"><img src="/assets/fregata/transition_34.webp" alt="FREGATA halfway through the switch, wing tilted about 45 degrees, all ten propellers spinning" width="1440" height="810" loading="lazy"></figure>
-      <figure data-view="cruise_34"><img src="/assets/fregata/cruise_34.webp" alt="FREGATA in cruise, wing flat, only the two wingtip propellers spinning" width="1440" height="810" loading="lazy"></figure>
-      <figure data-view="cruise_top"><img src="/assets/fregata/cruise_top.webp" alt="FREGATA from directly above in cruise, long straight wing with four pods per side and a crossbar tail with two pods" width="1440" height="810" loading="lazy"></figure>
-      <figure data-view="rear"><img src="/assets/fregata/rear.webp" alt="FREGATA from behind, standing on its pads, RAVIONICS on the left wing and FREGATA on the right" width="1440" height="810" loading="lazy"></figure>
-      <p class="tag">Concept render</p>
+  <section class="k-hero" id="hero" aria-labelledby="hero-h">
+    <video class="k-hero-film" muted loop playsinline autoplay preload="auto" poster="/media/films/orbit.jpg" aria-label="Concept animation: the camera circles FREGATA on a dark stage, its long wing flat and the two wingtip propellers turning">
+      <source src="/media/films/orbit-m.mp4" type="video/mp4" media="(max-width: 760px)">
+      <source src="/media/films/orbit.mp4" type="video/mp4">
+    </video>
+    <span class="corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <h1 id="hero-h" class="k-hero-h"><span>Always</span> <span>Watching</span></h1>
+    <div class="k-hero-foot">
+      <p>FREGATA lifts off a ship's deck like a helicopter, turns its whole wing to fly like an airplane, and is built to stay on watch for a full day.</p>
+      <a class="k-scroll" href="#about">Scroll <span aria-hidden="true">&darr;</span></a>
     </div>
-    <div class="thumbs" role="group" aria-label="Choose a view">
-      <button type="button" aria-pressed="true" data-show="hover_front"><img src="/assets/fregata/hover_front-900.webp" alt="" loading="lazy"><span>Front, on the pad</span></button>
-      <button type="button" aria-pressed="false" data-show="hover_34"><img src="/assets/fregata/hover_34-900.webp" alt="" loading="lazy"><span>Ready to lift</span></button>
-      <button type="button" aria-pressed="false" data-show="transition_34"><img src="/assets/fregata/transition_34-900.webp" alt="" loading="lazy"><span>Transition</span></button>
-      <button type="button" aria-pressed="false" data-show="cruise_34"><img src="/assets/fregata/cruise_34-900.webp" alt="" loading="lazy"><span>Cruise</span></button>
-      <button type="button" aria-pressed="false" data-show="cruise_top"><img src="/assets/fregata/cruise_top-900.webp" alt="" loading="lazy"><span>From above</span></button>
-      <button type="button" aria-pressed="false" data-show="rear"><img src="/assets/fregata/rear-900.webp" alt="" loading="lazy"><span>From behind</span></button>
-    </div>
-  </div>
-
-  <div class="specs mt-xl" data-in>
-    <div><b>20 ft</b><p>Wingspan, with upturned winglets</p></div>
-    <div><b>10</b><p>Propellers: 4 on each wing, 2 on the tail</p></div>
-    <div><b>2</b><p>Turning in cruise: the wingtips</p></div>
-    <div><b>24 h</b><p>Loiter target on station, approximate</p></div>
-    <div><b>&lt;30 min</b><p>Field assembly target, two people</p></div>
-    <div><b>Diesel</b><p>Hybrid electric, on the same fuel as the ship</p></div>
-  </div>
-  <p class="note mt-m">Design goals and planning estimates, not measurements. FREGATA flies in simulation today.</p>
-</div></section>
-
-<section id="technology" class="sec alt" aria-labelledby="te-h"><div class="wrap">
-  <div class="head" data-in>
-    <p class="eyebrow"><i>02</i> Technology</p>
-    <h2 id="te-h">One wing.<br>Three ways to fly.</h2>
-    <p class="lead">The body stays level the whole time. The wing and the tail crossbar turn together, from pointing at the sky to lying flat, and the flight software holds the aircraft steady through every degree.</p>
-  </div>
-  <ol class="modes3 mt-l">
-    <li data-in><figure><img src="/assets/fregata/hover_34-900.webp" alt="Hover pose, wing on edge, propellers up" width="900" height="506" loading="lazy"></figure><p class="k">01 · Lift</p><h3>Straight up, off the deck</h3><p>Wing on edge, all ten propellers pointing at the sky. The battery helps the diesel through the few hungry minutes of vertical flight.</p></li>
-    <li data-in><figure><img src="/assets/fregata/transition_34-900.webp" alt="Transition, wing at about 45 degrees" width="900" height="506" loading="lazy"></figure><p class="k">02 · Transition</p><h3>Tilt into the wind</h3><p>Wing and tail tilt forward together as speed builds, until the wing carries the weight. This is the hardest moment for a tilt-wing, and the one we simulate most.</p></li>
-    <li data-in><figure><img src="/assets/fregata/cruise_34-900.webp" alt="Cruise, wing flat, wingtip propellers spinning" width="900" height="506" loading="lazy"></figure><p class="k">03 · Loiter</p><h3>Fold eight, fly on two</h3><p>Eight propellers fold flat against their pods. The two at the wingtips pull FREGATA along on a few kilowatts, and the diesel recharges the battery.</p></li>
-  </ol>
-
-  <div class="split mt-xl">
-    <div data-in>
-      <h3 class="h3">A hybrid heart.</h3>
-      <p class="lead sm">Batteries alone cannot fly for a day, and engines alone cannot hover efficiently. FREGATA carries both, and the software decides which one works when.</p>
-    </div>
-    <ul class="systems" data-in>
-      <li><b>Hybrid power</b><span>Small heavy-fuel diesels turn alternators. They run the aircraft in cruise and recharge the battery.</span></li>
-      <li><b>Battery</b><span>Covers takeoff, landing and the transition, when power demand peaks.</span></li>
-      <li><b>Ten motors</b><span>Distributed along the wing and tail. If one stops, the others make up the difference.</span></li>
-      <li><b>Flight computer</b><span>Autopilot, safety checks and the radio link, with a backup.</span></li>
-      <li><b>Sensor ball</b><span>A swappable pod under the nose: day and thermal cameras looking down and out to sea.</span></li>
-      <li><b>One wiring spine</b><span>Power and data with blind-mate plugs at every module joint.</span></li>
-    </ul>
-  </div>
-
-  <div class="soft mt-xl" data-in>
-    <div class="txt">
-      <p class="eyebrow">Flown by Galleion</p>
-      <h3 class="h3">The software is the aircraft's other half.</h3>
-      <p>Galleion is where FREGATA is designed, simulated, flown and kept: flight software for the hover-to-wing transition, the fence and beyond-sight operations, ground control, relief planning, maintenance for every module and a signed record of every sortie.</p>
-      <div class="pills"><span>Digital twin</span><span>Live weather</span><span>Ground control</span><span>Relief planning</span><span>Module hours</span><span>Signed records</span></div>
-      <p><a class="btn ghost" href="https://galleion.umanahsystems.com/">Explore Galleion <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></p>
-    </div>
-    <figure><img src="/assets/fregata/cruise_top.webp" alt="FREGATA seen from above in cruise" width="1440" height="810" loading="lazy"></figure>
-  </div>
-</div></section>
-
-<span id="markets" class="anchor"></span><span id="gap" class="anchor"></span>
-<section id="missions" class="sec" aria-labelledby="mi-h"><div class="wrap">
-  <div class="head" data-in>
-    <p class="eyebrow"><i>03</i> Missions</p>
-    <h2 id="mi-h">Always one<br>on station.</h2>
-    <p class="lead">Watch a harbor, a coastline, a shipping lane, a pipeline or a search area around the clock. A relief aircraft arrives before the one on station turns for home, so the picture never goes dark. Surveillance and awareness only: FREGATA carries no weapons.</p>
-  </div>
-
-  <div class="relay mt-l" data-in role="img" aria-label="One day, three aircraft: each flies a long shift on station, and the next arrives before it leaves, so coverage is unbroken">
-    <p class="k">One day, three aircraft (illustrative relay plan)</p>
-    <div class="lane"><span>FRG-01</span><div><i class="tr" style="left:0;width:3%"></i><i class="on" style="left:3%;width:44%"></i><i class="tr" style="left:47%;width:3%"></i><i class="on" style="left:92%;width:8%"></i></div></div>
-    <div class="lane"><span>FRG-02</span><div><i class="tr" style="left:41%;width:3%"></i><i class="on" style="left:44%;width:44%"></i><i class="tr" style="left:88%;width:3%"></i></div></div>
-    <div class="lane"><span>FRG-03</span><div><i class="on" style="left:0;width:6%"></i><i class="tr" style="left:6%;width:3%"></i><i class="tr" style="left:85%;width:3%"></i><i class="on" style="left:88%;width:12%"></i></div></div>
-    <div class="lane cov"><span>Coverage</span><div><i style="left:0;width:100%"></i></div></div>
-    <div class="ticks"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div>
-    <p class="legend"><i class="on"></i>On station <i class="tr"></i>Transit <i class="cv"></i>Coverage: unbroken</p>
-  </div>
-
-  <div class="cards mt-l">
-    <article data-in><h3>Ports and coasts</h3><p>Maritime awareness over harbors, approaches and shipping lanes, day and night, from a deck or a pad ashore.</p></article>
-    <article data-in><h3>Pipelines and power</h3><p>Long, steady patrols of lines, sites and corridors far from any runway.</p></article>
-    <article data-in><h3>Search and recovery</h3><p>Hours over a search area instead of minutes, with the thermal camera looking for people in the water.</p></article>
-    <article data-in><h3>Borders and wide areas</h3><p>A persistent view of large areas with a small crew, relieved automatically.</p></article>
-  </div>
-
-  <div class="control mt-xl" data-in>
-    <div>
-      <h3 class="h3">Autonomous by default.<br>Yours when you want it.</h3>
-      <div class="tabs mt-m" role="tablist" aria-label="Levels of control">
-        <button role="tab" id="t-a" aria-selected="true" aria-controls="p-a">Autonomous</button>
-        <button role="tab" id="t-g" aria-selected="false" aria-controls="p-g" tabindex="-1">Guided</button>
-        <button role="tab" id="t-m" aria-selected="false" aria-controls="p-m" tabindex="-1">Manual</button>
+  </section>
+  <section class="k-statement" id="about" aria-label="What Ravionics does">
+    <p class="k-big" data-words>A coastline, a harbor or a pipeline needs watching every hour of every day. Crewed patrols are expensive and small drones come home after an hour. FREGATA needs no runway, rides a long wing for hours on two propellers, and hands over to the next aircraft before it leaves. It carries cameras, never weapons.</p>
+  </section>
+  <section class="scrub capture" id="film-takeoff" style="--len: 720vh" aria-labelledby="film-takeoff-h">
+    <div class="scrub-pin">
+      <img class="scrub-still" src="/media/films/takeoff.jpg" alt="" aria-hidden="true">
+      <video class="scrub-film" muted playsinline preload="none" poster="/media/films/takeoff.jpg" data-src="/media/films/takeoff.mp4" data-src-m="/media/films/takeoff-m.mp4" aria-label="Concept animation: FREGATA lifts straight up from a pad, folds its legs, tilts its wing and tail from upright to flat and flies away on its two wingtip propellers"></video>
+      <div class="film-shade" aria-hidden="true"></div>
+      <div class="film-head">
+        <h2 id="film-takeoff-h">Deck to wing<br><span>in one smooth turn</span></h2>
       </div>
-      <div role="tabpanel" id="p-a" aria-labelledby="t-a" class="panel"><p><b>It flies the plan.</b> Takeoff, transition, the route, the orbit and the landing are flown by the aircraft. The crew watches, approves and steps in only when they choose to.</p></div>
-      <div role="tabpanel" id="p-g" aria-labelledby="t-g" class="panel" hidden><p><b>Point, and it goes.</b> Tap a new orbit, a new heading or a new height. The aircraft works out how to get there safely and tells you before it does.</p></div>
-      <div role="tabpanel" id="p-m" aria-labelledby="t-m" class="panel" hidden><p><b>Hands on the sticks.</b> A pilot can always take direct control. If the link drops, the aircraft takes back over, holds safe and heads for its planned recovery.</p></div>
+      <ol class="film-chapters" aria-hidden="true"><li data-at="0-0.3">Lift</li><li data-at="0.3-0.72">Tilt</li><li data-at="0.72-0.82">Fold</li><li data-at="0.82-1.01">Cruise</li></ol>
+      <div class="scrub-notes">
+        <div data-at="0.02-0.29"><p class="n">01 &middot; Lift</p><h3>Straight up, off the deck</h3><p>Wing on edge, all ten propellers pointing at the sky. The legs fold into the body as it climbs.</p></div>
+        <div data-at="0.3-0.71"><p class="n">02 &middot; Tilt</p><h3>The whole wing turns</h3><p>Wing and tail tilt forward together as speed builds. The body stays level the whole way, and the flight software holds it steady through every degree.</p></div>
+        <div data-at="0.72-0.81"><p class="n">03 &middot; Fold</p><h3>Eight propellers rest</h3><p>Once the wing carries the weight, eight propellers stop and fold flat against their pods.</p></div>
+        <div data-at="0.82-1.01"><p class="n">04 &middot; Cruise</p><h3>Two are enough</h3><p>The wingtip propellers pull FREGATA along on a few kilowatts. Hours of this is what a day on watch looks like.</p></div>
+      </div>
     </div>
-    <ul class="safety">
-      <li><b>A fence it will not cross.</b> The approved area is loaded before takeoff and checked many times a second.</li>
-      <li><b>A safe place to land.</b> If something fails, it chooses the clearest spot within reach.</li>
-      <li><b>A motor out is not the end.</b> Ten propellers share the load.</li>
-      <li><b>A small crew.</b> The goal is 3 to 4 people per shift for the whole relay.</li>
-    </ul>
-  </div>
-</div></section>
-
-<section id="fieldkit" class="sec alt" aria-labelledby="fk-h"><div class="wrap">
-  <div class="fk">
-    <div data-in>
-      <p class="eyebrow"><i>04</i> Field Kit</p>
-      <h2 id="fk-h">Two people.<br>No tools.</h2>
-      <p class="lead">FREGATA travels in cases and comes apart into five modules, each light enough for two people to carry. Pins lock them, plugs mate blind, and every module tells the software who it is.</p>
-      <p class="big mt-m"><b>&lt;30</b> minutes from cases to takeoff <span class="note">(target)</span></p>
+  </section>
+  <section class="teasers" id="platform" aria-labelledby="tz-h">
+    <div class="tz-head">
+      <h2 id="tz-h" data-reveal>One aircraft, a full day<br><span>and a relay that never goes dark</span></h2>
     </div>
-    <ol class="kit" data-in>
-      <li><b>Open the cases</b><span>Body, left wing, right wing, tail and sensor pod.</span></li>
-      <li><b>Click the modules together</b><span>Tool-free locking pins and blind-mate power and data plugs.</span></li>
-      <li><b>Let the software check</b><span>Each module's ID, calibration and hours are read and verified. A copied or changed module is refused.</span></li>
-      <li><b>Preflight goes green, lift off</b><span>Motors, power, fence and link are all checked before the first propeller turns.</span></li>
-    </ol>
-  </div>
-  <figure class="wide mt-xl" data-in><img src="/assets/fregata/rear.webp" alt="FREGATA from behind on its three pads, wing on edge, tail crossbar with two pods above" width="1440" height="810" loading="lazy"><figcaption>Three legs with flat pads, no wheels. They fold into the body in flight. Concept render.</figcaption></figure>
-</div></section>
-
-<section id="about" class="sec" aria-labelledby="ab-h"><div class="wrap">
-  <div class="head" data-in>
-    <p class="eyebrow"><i>05</i> About</p>
-    <h2 id="ab-h">Where it stands.</h2>
-    <p class="lead">Ravionics is a Umanah Systems Group aircraft program building persistent, unarmed aerial surveillance for governments, coast and port authorities and infrastructure operators.</p>
-  </div>
-  <div class="standing mt-l" data-in>
-    <div><p class="k">Assessed awardable</p><p><b>Tradewinds Solutions Marketplace</b> and <b>DARPA ERIS</b> assessed the Ravionics proposals as awardable.</p></div>
-    <div><p class="k">In simulation</p><p>The design, the flight software and the ground control all run in simulation today. <b>No flight has been made yet.</b></p></div>
-    <div><p class="k">Next</p><p>Bench tests of the hybrid power and the motors, then hardware in the loop, then flight trials.</p></div>
-  </div>
-  <p class="note mt-m">Resources: the <a href="/ravionics-infographic.html">Gap Map</a> and the <a href="/ravionics-cost-model.html">Coverage Model</a>.</p>
-</div></section>
-
-<section id="contact" class="sec alt" aria-labelledby="ct-h"><div class="wrap">
-  <div class="contact">
-    <div class="txt" data-in>
-      <p class="eyebrow"><i>06</i> Contact</p>
-      <h2 id="ct-h">Request a briefing.</h2>
-      <p class="lead">For agencies with a watch to keep, operators of coasts, ports and pipelines, and investors who see what a full day on station means at fleet scale. Tell us about the mission.</p>
+    <article class="tz">
+      <video class="tz-media tz-loop" muted loop playsinline preload="none" poster="/media/films/turn.jpg" aria-label="Concept animation: FREGATA on its pad, turning slowly, wing on edge and ready to lift"><source src="/media/films/turn-m.mp4" type="video/mp4" media="(max-width: 760px)"><source src="/media/films/turn.mp4" type="video/mp4"></video>
+      <div class="tz-shade" aria-hidden="true"></div>
+      <a class="tz-copy" href="/fregata.html" data-reveal>
+        <p class="tz-n">01 <span>The aircraft</span></p>
+        <h3>FREGATA</h3>
+        <p class="tz-line">Twenty feet of wing, ten electric propellers and a sensor ball under the nose. Named for the bird that barely lands.</p>
+        <span class="tz-go">Meet FREGATA <span aria-hidden="true">&rarr;</span></span>
+      </a>
+    </article>
+    <article class="tz">
+      <img class="tz-media tz-still" src="/media/films/xray-end.jpg" alt="" loading="lazy" aria-hidden="true">
+      <div class="tz-shade" aria-hidden="true"></div>
+      <a class="tz-copy" href="/technology.html" data-reveal>
+        <p class="tz-n">02 <span>Technology</span></p>
+        <h3>See inside</h3>
+        <p class="tz-line">Two heavy-fuel diesels, a battery for the hungry minutes of hover, and one wiring spine to every motor.</p>
+        <span class="tz-go">Look through the skin <span aria-hidden="true">&rarr;</span></span>
+      </a>
+    </article>
+    <article class="tz">
+      <img class="tz-media tz-still" src="/media/stills/cruise_top.webp" alt="" loading="lazy" aria-hidden="true">
+      <div class="tz-shade" aria-hidden="true"></div>
+      <a class="tz-copy" href="/missions.html" data-reveal>
+        <p class="tz-n">03 <span>Missions</span></p>
+        <h3>Always one on station</h3>
+        <p class="tz-line">Harbors, coasts, shipping lanes, pipelines and search areas, watched around the clock by a small crew.</p>
+        <span class="tz-go">See the relay <span aria-hidden="true">&rarr;</span></span>
+      </a>
+    </article>
+    <article class="tz">
+      <img class="tz-media tz-still" src="/media/films/explode-end.jpg" alt="" loading="lazy" aria-hidden="true">
+      <div class="tz-shade" aria-hidden="true"></div>
+      <a class="tz-copy" href="/field-kit.html" data-reveal>
+        <p class="tz-n">04 <span>Field kit</span></p>
+        <h3>Two people. No tools.</h3>
+        <p class="tz-line">Five modules that two people can carry, locked by pins and checked by the software. Cases to takeoff in under thirty minutes, target.</p>
+        <span class="tz-go">See it come apart <span aria-hidden="true">&rarr;</span></span>
+      </a>
+    </article>
+  </section>
+  <section class="soft" id="gap" aria-labelledby="soft-h">
+    <div class="soft-in">
+      <div class="soft-head">
+        <h2 id="soft-h" data-reveal>Flown by Galleion <span>before it ever leaves the ground</span></h2>
+        <p class="lead" data-reveal>Galleion is the Umanah Systems Group software where FREGATA is designed, simulated, flown and kept: the hover-to-wing transition, the fence it will not cross, ground control, relief planning and a signed record of every sortie.</p>
+      </div>
+      <div class="soft-shots">
+        <figure class="wipe soft-wide" data-wipe><img src="/media/films/sys-power.jpg" width="1920" height="1080" loading="lazy" alt="FREGATA seen through its skin, the two diesels and generators lit in gold"><figcaption><strong>Power</strong> Two heavy-fuel diesels, sized in Galleion.</figcaption></figure>
+        <figure class="wipe" data-wipe><img src="/media/films/sys-wiring-960.jpg" width="960" height="540" loading="lazy" alt="FREGATA seen through its skin, the wiring spine lit from the body to every motor"><figcaption><strong>Wiring</strong> One spine to all ten motors.</figcaption></figure>
+        <figure class="wipe" data-wipe><img src="/media/films/sys-eyes-960.jpg" width="960" height="540" loading="lazy" alt="FREGATA seen through its skin, the sensor ball under the nose lit in gold"><figcaption><strong>Eyes</strong> Day and thermal cameras under the nose.</figcaption></figure>
+      </div>
     </div>
-    <form class="form" id="contactForm" action="https://formspree.io/f/xeelnkqj" method="POST" data-in>
-      <label><span>Full name</span><input type="text" name="name" autocomplete="name" required></label>
-      <label><span>Organization</span><input type="text" name="organization" placeholder="Agency, company or fund" autocomplete="organization"></label>
-      <label><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
-      <label><span>Inquiry type</span><select name="inquiry_type" required><option value="" disabled selected>Select one</option><option>Government / Defense Procurement</option><option>Investment Inquiry</option><option>Operational Partnership</option><option>Energy / Infrastructure Partnership</option><option>General Inquiry</option></select></label>
-      <label class="wide"><span>Message</span><textarea name="message" rows="5" placeholder="Tell us about your mission or operational need." required></textarea></label>
-      <div class="wide sendrow"><button class="btn solid" type="submit">Send message <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button><p class="note" role="status" aria-live="polite" data-form-status></p></div>
-    </form>
-  </div>
-</div></section>
-
+  </section>
+  <section class="k-close k-close-pic" aria-labelledby="close-h">
+    <img class="k-close-img" src="/media/stills/hover_34.webp" alt="" width="1920" height="1080" loading="lazy" aria-hidden="true">
+    <h2 id="close-h" class="k-close-h" data-reveal>Keep watch. Around the clock.</h2>
+    <div class="actions k-close-actions" data-reveal><a class="btn btn-glass btn-big" href="/contact.html">Request a briefing <span aria-hidden="true">&rarr;</span></a></div>
+  </section>
 </main>
 
-<footer class="foot"><div class="wrap">
-  <div class="cols">
-    <div><a class="mark" href="#top"><b>R</b><span>RAVIONICS</span></a><p class="note mt-m">FREGATA: an unarmed, uncrewed tilt-wing for a full day on watch. A Umanah Systems Group program, designed and flown with Galleion.</p></div>
-    <div><h4>FREGATA</h4><ul><li><a href="#fregata">The aircraft</a></li><li><a href="#technology">Technology</a></li><li><a href="#missions">Missions</a></li><li><a href="#fieldkit">Field Kit</a></li></ul></div>
-    <div><h4>Resources</h4><ul><li><a href="/ravionics-infographic.html">Gap Map</a></li><li><a href="/ravionics-cost-model.html">Coverage Model</a></li><li><a href="#contact">Request a briefing</a></li></ul></div>
-    <div><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="https://galleion.umanahsystems.com/">Galleion</a></li><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/terms.html">Terms of Use</a></li></ul></div>
+<footer class="foot">
+  <div class="foot-top">
+    <p class="foot-line">Always watching.<br>Never armed.</p>
+    <a class="btn btn-glass foot-cta" href="/contact.html">Request a briefing <span aria-hidden="true">&rarr;</span></a>
   </div>
-  <p class="word" aria-hidden="true">FREGATA</p>
-  <div class="legal"><span>© 2026 Ravionics, a Umanah Systems Group program</span><span>Images are concept renders of the design. Figures are design goals or simulated results, not measurements.</span></div>
-</div></footer>
+  <div class="foot-grid">
+    <nav class="foot-col" aria-label="Aircraft"><b>Aircraft</b><a href="/fregata.html">FREGATA</a><a href="/technology.html">Technology</a><a href="/missions.html">Missions</a><a href="/field-kit.html">Field Kit</a></nav>
+    <nav class="foot-col" aria-label="Company"><b>Company</b><a href="/">Home</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/ravionics-infographic.html">Gap Map</a><a href="/ravionics-cost-model.html">Coverage Model</a></nav>
+    <nav class="foot-col" aria-label="Family"><b>Family</b><a href="https://galleion.umanahsystems.com/" rel="noopener">Galleion</a><a href="https://umanahsystems.com/" rel="noopener">Umanah Systems Group</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></nav>
+  </div>
+  <a class="foot-giant" href="/" aria-label="Ravionics, home"><svg viewBox="0 0 1000 150" role="img" aria-hidden="true"><text x="500" y="128" text-anchor="middle" textLength="990" lengthAdjust="spacingAndGlyphs">RAVIONICS</text></svg></a>
+  <div class="foot-base"><p>&copy; 2026 Ravionics, a Umanah Systems Group program. All rights reserved.</p></div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact &middot; Ravionics</title>
+<meta name="description" content="Request a FREGATA briefing from Ravionics: for agencies, coast, port and pipeline operators, and investors.">
+<meta name="theme-color" content="#05070a">
+<meta property="og:title" content="Contact &middot; Ravionics">
+<meta property="og:description" content="Request a FREGATA briefing from Ravionics: for agencies, coast, port and pipeline operators, and investors.">
+<meta property="og:image" content="https://ravionics.com/og-fregata.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/r.css?v=b4315dc12b">
+<script type="module" src="/r.js?v=55e0f66c54"></script>
+</head>
+<body class="pg-contact">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar" id="bar">
+  <a class="wordmark" href="/" aria-label="Ravionics, home"><svg class="mark" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><path d="M2 15.5 L13 13 L16 9 L19 13 L30 15.5 L19 17 L16 23 L13 17 Z" fill="currentColor"/></svg><span>Ravionics</span></a>
+  <nav class="links" id="links" aria-label="Main">
+    <a href="/">Home</a>
+    <a href="/fregata.html">FREGATA</a>
+    <a href="/technology.html">Technology</a>
+    <a href="/missions.html">Missions</a>
+    <a href="/field-kit.html">Field Kit</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html" aria-current="page">Contact</a>
+  </nav>
+  <p class="clock" aria-label="Clock"><span id="clock">UTC --:--:--</span> <span class="clock-sep">/</span> Contact</p>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="links" aria-label="Open menu">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 8h18M3 16h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+  </button>
+</header>
+
+<main id="main">
+  <section class="contact-sec" id="contact" aria-labelledby="ph-h">
+    <img class="contact-bg" src="/media/stills/hover_front.webp" alt="" width="1920" height="1080" aria-hidden="true">
+    <div class="contact-in">
+      <div class="contact-copy">
+        <h1 id="ph-h">Request<br><span>a briefing.</span></h1>
+        <p class="lead">For agencies with a watch to keep, operators of coasts, ports and pipelines, and investors who see what a full day on station means at fleet scale. Tell us about the mission.</p>
+      </div>
+      <form class="cform" id="contactForm" action="https://formspree.io/f/xeelnkqj" method="POST">
+        <label>Full name<input name="name" autocomplete="name" required></label>
+        <label>Organization<input name="organization" autocomplete="organization"></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <label>Inquiry type<select name="inquiry_type" required><option value="">Select one</option><option>Government / Defense Procurement</option><option>Investment Inquiry</option><option>Operational Partnership</option><option>Energy / Infrastructure Partnership</option><option>General Inquiry</option></select></label>
+        <label class="wide">Message<textarea name="message" rows="5" required></textarea></label>
+        <input type="hidden" name="_next" value="https://ravionics.com/thanks.html">
+        <div class="wide cform-foot"><button class="btn btn-glass btn-big" type="submit">Send message <span aria-hidden="true">&rarr;</span></button><p class="cform-status" data-form-status role="status"></p></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-top">
+    <p class="foot-line">Always watching.<br>Never armed.</p>
+    <a class="btn btn-glass foot-cta" href="/contact.html">Request a briefing <span aria-hidden="true">&rarr;</span></a>
+  </div>
+  <div class="foot-grid">
+    <nav class="foot-col" aria-label="Aircraft"><b>Aircraft</b><a href="/fregata.html">FREGATA</a><a href="/technology.html">Technology</a><a href="/missions.html">Missions</a><a href="/field-kit.html">Field Kit</a></nav>
+    <nav class="foot-col" aria-label="Company"><b>Company</b><a href="/">Home</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/ravionics-infographic.html">Gap Map</a><a href="/ravionics-cost-model.html">Coverage Model</a></nav>
+    <nav class="foot-col" aria-label="Family"><b>Family</b><a href="https://galleion.umanahsystems.com/" rel="noopener">Galleion</a><a href="https://umanahsystems.com/" rel="noopener">Umanah Systems Group</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></nav>
+  </div>
+  <a class="foot-giant" href="/" aria-label="Ravionics, home"><svg viewBox="0 0 1000 150" role="img" aria-hidden="true"><text x="500" y="128" text-anchor="middle" textLength="990" lengthAdjust="spacingAndGlyphs">RAVIONICS</text></svg></a>
+  <div class="foot-base"><p>&copy; 2026 Ravionics, a Umanah Systems Group program. All rights reserved.</p></div>
+</footer>
+</body>
+</html>

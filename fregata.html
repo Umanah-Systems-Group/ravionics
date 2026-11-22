@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FREGATA &middot; Ravionics</title>
+<meta name="description" content="FREGATA: an unarmed, uncrewed tilt-wing aircraft with a 20 ft wing and ten electric propellers, designed for a full day on watch.">
+<meta name="theme-color" content="#05070a">
+<meta property="og:title" content="FREGATA &middot; Ravionics">
+<meta property="og:description" content="FREGATA: an unarmed, uncrewed tilt-wing aircraft with a 20 ft wing and ten electric propellers, designed for a full day on watch.">
+<meta property="og:image" content="https://ravionics.com/og-fregata.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/r.css?v=b4315dc12b">
+<script type="module" src="/r.js?v=55e0f66c54"></script>
+</head>
+<body class="pg-fregata">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar" id="bar">
+  <a class="wordmark" href="/" aria-label="Ravionics, home"><svg class="mark" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><path d="M2 15.5 L13 13 L16 9 L19 13 L30 15.5 L19 17 L16 23 L13 17 Z" fill="currentColor"/></svg><span>Ravionics</span></a>
+  <nav class="links" id="links" aria-label="Main">
+    <a href="/">Home</a>
+    <a href="/fregata.html" aria-current="page">FREGATA</a>
+    <a href="/technology.html">Technology</a>
+    <a href="/missions.html">Missions</a>
+    <a href="/field-kit.html">Field Kit</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <p class="clock" aria-label="Clock"><span id="clock">UTC --:--:--</span> <span class="clock-sep">/</span> FREGATA</p>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="links" aria-label="Open menu">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 8h18M3 16h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+  </button>
+</header>
+
+<main id="main">
+  <section class="page-head" aria-labelledby="ph-h">
+    <h1 id="ph-h">Named for the bird<br><span>that barely lands.</span></h1>
+    <p class="lead">The frigatebird stays aloft over open sea for days on a long, efficient wing. FREGATA is built on the same idea: lift off without a runway, then ride a long wing for hours while ten small propellers rest.</p>
+  </section>
+  <section class="showcase" aria-label="Ready to lift">
+    <video class="showcase-film loop" muted loop playsinline preload="none" poster="/media/films/turn.jpg" aria-label="Concept animation: FREGATA turning slowly on its pad, wing on edge and ready to lift"><source src="/media/films/turn-m.mp4" type="video/mp4" media="(max-width: 760px)"><source src="/media/films/turn.mp4" type="video/mp4"></video>
+    <div class="showcase-copy" data-reveal>
+      <h2>Ready to lift</h2>
+      <p>Wing on edge, ten propellers pointing at the sky, three legs on the pad. No runway, no catapult, no net.</p>
+    </div>
+  </section>
+  <section class="k-jobs" id="views" style="--len: 640vh" aria-labelledby="views-h">
+    <div class="k-jobs-stage">
+      <h2 class="k-jobs-h" id="views-h">One aircraft.<br><span>Six views.</span></h2>
+      <img class="k-jobs-film on" src="/media/stills/hover_front.webp" alt="FREGATA from the front, on its pad" loading="lazy" width="1920" height="1080">
+      <img class="k-jobs-film" src="/media/stills/hover_34.webp" alt="FREGATA ready to lift, wing on edge" loading="lazy" width="1920" height="1080">
+      <img class="k-jobs-film" src="/media/stills/transition_34.webp" alt="FREGATA in transition, wing half tilted" loading="lazy" width="1920" height="1080">
+      <img class="k-jobs-film" src="/media/stills/cruise_34.webp" alt="FREGATA in cruise, wing flat" loading="lazy" width="1920" height="1080">
+      <img class="k-jobs-film" src="/media/stills/cruise_top.webp" alt="FREGATA in cruise seen from above" loading="lazy" width="1920" height="1080">
+      <img class="k-jobs-film" src="/media/stills/rear.webp" alt="FREGATA from behind, the tail crossbar and its two propellers" loading="lazy" width="1920" height="1080">
+      <ol class="k-jobs-list">
+        <li><span class="n">01</span><h3>Front</h3><p>A long, thin wing with upturned tips, and the sensor ball under the nose.</p></li>
+        <li><span class="n">02</span><h3>Ready</h3><p>Wing and tail on edge. All ten propellers lift together.</p></li>
+        <li><span class="n">03</span><h3>Transition</h3><p>Wing and tail tilt forward together while the body stays level.</p></li>
+        <li><span class="n">04</span><h3>Cruise</h3><p>Wing flat. Eight propellers fold away; the two at the wingtips pull.</p></li>
+        <li><span class="n">05</span><h3>From above</h3><p>Twenty feet of wing and a slim body built around the fuel.</p></li>
+        <li><span class="n">06</span><h3>From behind</h3><p>A tail crossbar with two propellers that tilts with the wing.</p></li>
+      </ol>
+    </div>
+  </section>
+  <section class="cinema" id="orbit" aria-labelledby="orbit-h">
+    <div class="wrap">
+      <div class="tech-head">
+        <h2 id="orbit-h" data-reveal>All the way round</h2>
+        <p data-reveal>In cruise, from every side. The wingtip propellers turn; the other eight lie folded flat against their pods.</p>
+      </div>
+      <div class="reel" data-reveal>
+        <figure>
+          <video class="spin-film loop" muted loop playsinline preload="none" poster="/media/films/orbit.jpg" aria-label="Concept animation: the camera circles FREGATA in cruise on a dark stage"><source src="/media/films/orbit-m.mp4" type="video/mp4" media="(max-width: 760px)"><source src="/media/films/orbit.mp4" type="video/mp4"></video>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="technology" aria-labelledby="fr-t">
+    <div class="wrap">
+      <div class="tech-head">
+        <h2 id="fr-t" data-reveal>FREGATA in numbers</h2>
+        <p data-reveal>Design goals and planning estimates from Ravionics sizing in Galleion.</p>
+      </div>
+      <div class="table-wrap" data-reveal>
+        <table>
+          <caption>FREGATA</caption>
+          <thead><tr><th scope="col">Job</th><th scope="col">How FREGATA does it</th><th scope="col">Figure</th></tr></thead>
+          <tbody>
+            <tr><td>Wingspan</td><td>Long wing with upturned winglets</td><td>20 ft</td></tr>
+            <tr><td>Propellers</td><td>Four on each wing, two on the tail</td><td>10, electric</td></tr>
+            <tr><td>Turning in cruise</td><td>The two at the wingtips</td><td>2</td></tr>
+            <tr><td>On station</td><td>Long, slow loiter on the wing</td><td>24 h target</td></tr>
+            <tr><td>Runway</td><td>Lifts straight up like a helicopter</td><td>None</td></tr>
+            <tr><td>Power</td><td>Heavy-fuel diesels and a battery</td><td>Hybrid electric</td></tr>
+            <tr><td>Field assembly</td><td>Five modules, two people, no tools</td><td>Under 30 min, target</td></tr>
+            <tr><td>Weapons</td><td>Surveillance and awareness only</td><td>None, ever</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">Design goals and estimates, not measurements.</p>
+    </div>
+  </section>
+  <section class="duo" aria-label="More about FREGATA">
+    <a href="/technology.html">
+      <img src="/media/films/xray-end.jpg" alt="FREGATA seen through its skin, engines, battery and wiring glowing" width="1920" height="1080" loading="lazy">
+      <div class="duo-copy"><p class="n">Technology</p><h2>See inside</h2><p>Two diesels, a battery, ten motors and one wiring spine, lit up one system at a time.</p><span class="go">Technology <span aria-hidden="true">&rarr;</span></span></div>
+    </a>
+    <a href="/field-kit.html">
+      <img src="/media/films/explode-end.jpg" alt="FREGATA pulled apart into its five modules" width="1920" height="1080" loading="lazy">
+      <div class="duo-copy"><p class="n">Field Kit</p><h2>Five modules, two people</h2><p>It comes apart for the case and clicks back together in the field.</p><span class="go">Field Kit <span aria-hidden="true">&rarr;</span></span></div>
+    </a>
+  </section>
+  <section class="k-close k-close-pic" aria-labelledby="close-h">
+    <img class="k-close-img" src="/media/stills/cruise_34.webp" alt="" width="1920" height="1080" loading="lazy" aria-hidden="true">
+    <h2 id="close-h" class="k-close-h" data-reveal>Built to stay up.</h2>
+    <div class="actions k-close-actions" data-reveal><a class="btn btn-glass btn-big" href="/contact.html">Request a briefing <span aria-hidden="true">&rarr;</span></a></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-top">
+    <p class="foot-line">Always watching.<br>Never armed.</p>
+    <a class="btn btn-glass foot-cta" href="/contact.html">Request a briefing <span aria-hidden="true">&rarr;</span></a>
+  </div>
+  <div class="foot-grid">
+    <nav class="foot-col" aria-label="Aircraft"><b>Aircraft</b><a href="/fregata.html">FREGATA</a><a href="/technology.html">Technology</a><a href="/missions.html">Missions</a><a href="/field-kit.html">Field Kit</a></nav>
+    <nav class="foot-col" aria-label="Company"><b>Company</b><a href="/">Home</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/ravionics-infographic.html">Gap Map</a><a href="/ravionics-cost-model.html">Coverage Model</a></nav>
+    <nav class="foot-col" aria-label="Family"><b>Family</b><a href="https://galleion.umanahsystems.com/" rel="noopener">Galleion</a><a href="https://umanahsystems.com/" rel="noopener">Umanah Systems Group</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></nav>
+  </div>
+  <a class="foot-giant" href="/" aria-label="Ravionics, home"><svg viewBox="0 0 1000 150" role="img" aria-hidden="true"><text x="500" y="128" text-anchor="middle" textLength="990" lengthAdjust="spacingAndGlyphs">RAVIONICS</text></svg></a>
+  <div class="foot-base"><p>&copy; 2026 Ravionics, a Umanah Systems Group program. All rights reserved.</p></div>
+</footer>
+</body>
+</html>
